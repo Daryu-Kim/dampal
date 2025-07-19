@@ -1,30 +1,48 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  font-family: "SUITE", sans-serif;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+ul,
+ol {
+  list-style: none;
+}
+
+.datatable .dt-cell__content {
+  font-size: 14px; /* 원하는 크기로 조정 */
+  overflow-y: auto;
+  line-height: 1.5;
+  text-overflow: unset;
+  white-space: unset;
+}
+
+.datatable .dt-cell__content--col-1 {
+  overflow-y: hidden;
+}
+
+.datatable .dt-header .dt-row {
+  height: 48px;
+}
+
+.datatable .dt-cell__content--header-1 {
+  text-align: center;
 }
 </style>
