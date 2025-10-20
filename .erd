@@ -4,8 +4,8 @@
   "settings": {
     "width": 5000,
     "height": 5000,
-    "scrollTop": -1855.6249,
-    "scrollLeft": -1276.6529,
+    "scrollTop": -1990.6249,
+    "scrollLeft": -985.6529,
     "zoomLevel": 1,
     "show": 431,
     "database": 4,
@@ -502,30 +502,6 @@
           "createAt": 1757560382360
         }
       },
-      "-VPWYb16_qcRugGCdS15n": {
-        "id": "-VPWYb16_qcRugGCdS15n",
-        "name": "shippings",
-        "comment": "배송",
-        "columnIds": [
-          "jBC5Luf-0Y8mc71ebxCan"
-        ],
-        "seqColumnIds": [
-          "jBC5Luf-0Y8mc71ebxCan",
-          "26g5qoa0GLP5RoVoPK0RW"
-        ],
-        "ui": {
-          "x": 1777.3334,
-          "y": 1763.0001,
-          "zIndex": 650,
-          "widthName": 60,
-          "widthComment": 60,
-          "color": ""
-        },
-        "meta": {
-          "updateAt": 1757561136571,
-          "createAt": 1757560758156
-        }
-      },
       "3fQXojQduzVkI3KIDsHpL": {
         "id": "3fQXojQduzVkI3KIDsHpL",
         "name": "settlements",
@@ -885,25 +861,6 @@
         "meta": {
           "updateAt": 1757608395319,
           "createAt": 1757566809982
-        }
-      },
-      "Wtl90xTjZFWTs9RIPzSd8": {
-        "id": "Wtl90xTjZFWTs9RIPzSd8",
-        "name": "",
-        "comment": "",
-        "columnIds": [],
-        "seqColumnIds": [],
-        "ui": {
-          "x": 1156.0832,
-          "y": 3456.2074,
-          "zIndex": 1153,
-          "widthName": 60,
-          "widthComment": 60,
-          "color": ""
-        },
-        "meta": {
-          "updateAt": 1757586411739,
-          "createAt": 1757586395287
         }
       }
     },
@@ -2666,46 +2623,6 @@
         "meta": {
           "updateAt": 1757561277569,
           "createAt": 1757560549861
-        }
-      },
-      "26g5qoa0GLP5RoVoPK0RW": {
-        "id": "26g5qoa0GLP5RoVoPK0RW",
-        "tableId": "-VPWYb16_qcRugGCdS15n",
-        "name": "transactionId",
-        "comment": "거래 고유 ID",
-        "dataType": "STRING",
-        "default": "",
-        "options": 8,
-        "ui": {
-          "keys": 0,
-          "widthName": 71,
-          "widthComment": 68,
-          "widthDataType": 60,
-          "widthDefault": 60
-        },
-        "meta": {
-          "updateAt": 1757560800300,
-          "createAt": 1757560771141
-        }
-      },
-      "jBC5Luf-0Y8mc71ebxCan": {
-        "id": "jBC5Luf-0Y8mc71ebxCan",
-        "tableId": "-VPWYb16_qcRugGCdS15n",
-        "name": "id",
-        "comment": "배송 고유 ID",
-        "dataType": "STRING",
-        "default": "",
-        "options": 10,
-        "ui": {
-          "keys": 1,
-          "widthName": 60,
-          "widthComment": 68,
-          "widthDataType": 60,
-          "widthDefault": 60
-        },
-        "meta": {
-          "updateAt": 1757560787735,
-          "createAt": 1757560775154
         }
       },
       "6K-Q9jeOwwUSVr4WWWfz6": {
@@ -5022,34 +4939,6 @@
           "createAt": 1757560433074
         }
       },
-      "gGQOMOG-TsBwHiL8-wBKV": {
-        "id": "gGQOMOG-TsBwHiL8-wBKV",
-        "identification": false,
-        "relationshipType": 8,
-        "startRelationshipType": 2,
-        "start": {
-          "tableId": "bWg9fD0FSnaa9ckRCCaR1",
-          "columnIds": [
-            "iLMofSoYljtfaV5WFoOQ5"
-          ],
-          "x": 1710.2258937497688,
-          "y": 1952.8390905963722,
-          "direction": 2
-        },
-        "end": {
-          "tableId": "-VPWYb16_qcRugGCdS15n",
-          "columnIds": [
-            "26g5qoa0GLP5RoVoPK0RW"
-          ],
-          "x": 1777.3334,
-          "y": 1815.0001,
-          "direction": 1
-        },
-        "meta": {
-          "updateAt": 1757560771141,
-          "createAt": 1757560771141
-        }
-      },
       "7JswcfdZ2-g1ZWxPLBhMK": {
         "id": "7JswcfdZ2-g1ZWxPLBhMK",
         "identification": false,
@@ -5501,23 +5390,6 @@
     },
     "indexEntities": {},
     "indexColumnEntities": {},
-    "memoEntities": {
-      "ojAbCVwg__RtiQiKv_0c4": {
-        "id": "ojAbCVwg__RtiQiKv_0c4",
-        "value": "d",
-        "ui": {
-          "x": 1724.3334,
-          "y": 1915.0001,
-          "zIndex": 668,
-          "width": 116,
-          "height": 100,
-          "color": ""
-        },
-        "meta": {
-          "updateAt": 1757561129123,
-          "createAt": 1757560898001
-        }
-      }
-    }
+    "memoEntities": {}
   }
 }
