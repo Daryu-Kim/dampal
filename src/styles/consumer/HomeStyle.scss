@@ -1,0 +1,165 @@
+$header-height: 56px;
+$bottom-height: 56px;
+
+.consumer-home {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: #efefef;
+
+  > .inner {
+    position: relative;
+
+    width: 100%;
+    max-width: 768px; // iPhone Pro Max 기준
+    height: 100%;
+
+    background: #fff;
+    overflow: hidden;
+
+    > .home-main {
+      height: 100%;
+      padding-top: calc(#{$header-height} + var(--safe-top));
+      padding-bottom: calc(#{$bottom-height} + var(--safe-bottom));
+      overflow: hidden;
+
+      > .home-content {
+        height: 100%;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+
+        padding-left: var(--safe-left);
+        padding-right: var(--safe-right);
+
+        > .main-banner-container {
+          background-color: #f6f7fa;
+          padding: 4px 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          > a {
+            > img {
+              width: 296px;
+              aspect-ratio: 296 / 56;
+            }
+          }
+        }
+
+        > .main-search-container {
+          background-color: #f6f7fa;
+          padding: 12px 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          > button {
+            background: none;
+            border: none;
+            outline: none;
+            border: 2px solid #6002ee;
+            width: 100%;
+            border-radius: 100rem;
+            padding: 14px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+
+            &:hover {
+              transform: scale(0.95);
+            }
+
+            > p {
+              font-weight: 700;
+              font-size: 14px;
+            }
+          }
+        }
+
+        > .main-function-container {
+          padding-top: 16px;
+          background: linear-gradient(
+            rgb(246, 247, 250) 87.75%,
+            rgb(255, 255, 255) 100%
+          );
+
+          > .main-function-inner {
+            padding: 0 16px;
+
+            > .main-buy-container {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 10px;
+
+              > div {
+                background: white;
+                border-radius: 8px;
+                box-shadow: rgba(50, 50, 97, 0.08) 2px 3px 13px 0px;
+                padding: 12px 14px;
+                cursor: pointer;
+
+                &:hover {
+                  transform: scale(0.95);
+                }
+              }
+            }
+
+            > .main-subscribe-container {
+              margin-top: 10px;
+              background: white;
+              border-radius: 8px;
+              box-shadow: rgba(50, 50, 97, 0.08) 2px 3px 13px 0px;
+              padding: 12px 14px;
+              cursor: pointer;
+
+              &:hover {
+                transform: scale(0.975);
+              }
+            }
+
+            > .main-quick-menu-container {
+              border-radius: 8px;
+              margin-top: 14px;
+              background: white;
+
+              > .main-quick-menu-tab-container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+
+                > input {
+                  display: none;
+                }
+
+                > label {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 10px 18px;
+                  font-size: 12px;
+                  font-weight: 500;
+                  color: #9ca3af;
+                  border-bottom: 1px solid #EDEDF0;
+                }
+
+                > input:checked + label {
+                  color: black;
+                  border-bottom-color: black;
+                }
+              }
+
+              > .main-quick-menu-content-container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

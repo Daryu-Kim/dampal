@@ -1,0 +1,10 @@
+:root {
+  /* iOS에서만 값 존재, 나머지는 0 */
+  --safe-top: env(safe-area-inset-top);
+  --safe-right: env(safe-area-inset-right);
+  --safe-bottom: env(safe-area-inset-bottom);
+  --safe-left: env(safe-area-inset-left);
+
+  --app-header-height: 56px;
+  --app-bottom-nav-height: 56px;
+}
