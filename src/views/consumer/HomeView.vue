@@ -61,11 +61,34 @@
                   <label for="quick-menu-life">라이프</label>
                 </div>
                 <div class="main-quick-menu-content-container">
-                  <div v-if="currentQuickMenuTab === 'buy'">1</div>
+                  <div v-if="currentQuickMenuTab === 'buy'">
+                    <button>
+                      <img src="https://picsum.photos/54" />
+                      <p>네코페이</p>
+                    </button>
+                    <button>
+                      <img src="https://picsum.photos/54" />
+                      <p>네코페이</p>
+                    </button>
+                    <button>
+                      <img src="https://picsum.photos/54" />
+                      <p>네코페이</p>
+                    </button>
+                    <button>
+                      <img src="https://picsum.photos/54" />
+                      <p>네코페이</p>
+                    </button>
+                  </div>
                   <div v-if="currentQuickMenuTab === 'sell'">2</div>
                   <div v-if="currentQuickMenuTab === 'manage'">3</div>
                   <div v-if="currentQuickMenuTab === 'life'">4</div>
                 </div>
+                <button>
+                  <p>전체 서비스 보기</p>
+                  <Icon>
+                    <Add16Filled />
+                  </Icon>
+                </button>
               </div>
             </div>
           </div>
@@ -82,7 +105,7 @@
 import MainHeaderComponent from '@/components/consumer/MainHeaderComponent.vue'; "@/components/consumer/MainHeaderComponent.vue";
 import BottomNavComponent from '@/components/consumer/BottomNavComponent.vue';
 import { Icon } from "@vicons/utils";
-import { Search48Filled } from "@vicons/fluent";
+import { Search48Filled, Add16Filled } from "@vicons/fluent";
 import { ref } from 'vue';
 
 const currentQuickMenuTab = ref("buy");

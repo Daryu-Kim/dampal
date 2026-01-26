@@ -144,6 +144,7 @@ $bottom-height: 56px;
                   font-weight: 500;
                   color: #9ca3af;
                   border-bottom: 1px solid #EDEDF0;
+                  cursor: pointer;
                 }
 
                 > input:checked + label {
@@ -153,8 +154,27 @@ $bottom-height: 56px;
               }
 
               > .main-quick-menu-content-container {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
+                padding: 12px;
+
+                > div {
+                  display: grid;
+                  grid-template-columns: repeat(4, 1fr);
+                  gap: 20px;
+                  > button {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 2px;
+                    cursor: pointer;
+                    background: none;
+                    border: none;
+                    outline: none;
+
+                    > p {
+                      font-weight: 500;
+                    }
+                  }
+                }
               }
             }
           }
